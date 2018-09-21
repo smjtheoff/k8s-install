@@ -1,6 +1,6 @@
 ### install K8S Single Node
 
-1. Install Kube ADM (k8s_Lasted.sh)
+1. Install kubeadm (k8s_Lasted.sh)
 	
 2. Kube INIT
 
