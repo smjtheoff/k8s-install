@@ -5,14 +5,19 @@
 2. Kube INIT
 
 	sudo su -
+	
 	swapoff -a
+	
 	kubeadm init --kubernetes-version=v1.9.2  --apiserver-advertise-address=0.0.0.0 --pod-network-cidr=10.244.0.0/16 
+	
 	exit
 
 3. ADD Kube Config
 
     mkdir -p $HOME/.kube
+    
     sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+    
     sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
 4. Make Master node to handle POD
