@@ -1,3 +1,4 @@
+```
 sudo -i
 mkdir -p ~/k8s_backup/etcd
 cd /etc/kubernetes/pki/
@@ -12,3 +13,5 @@ kubeadm init phase kubeconfig all
 
 
 kubeadm alpha certs check-expiration
+
+```
